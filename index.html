@@ -1,0 +1,15 @@
+<script src="https://blog.equalityofthought.org/assets/scripts/posts.js"></script>
+
+<h2>Posts</h2>
+<ul id="posts-list"></ul>
+
+<script>
+    posts.forEach((post) => {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = "https://blog.equalityofthought.org/posts/" + post;
+        a.textContent = post;
+        li.appendChild(a);
+        document.getElementById('posts-list').appendChild(li);
+    });
+</script>
